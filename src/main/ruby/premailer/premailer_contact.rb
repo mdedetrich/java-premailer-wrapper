@@ -6,7 +6,7 @@ java_import "com.msiops.premailer.PremailerInterface"
 
 # see https://github.com/jruby/jruby/issues/1249
 
-if ENV_JAVA['java.specification.version'] >= '1.8'
+if ENV_JAVA['java.specification.version'] >= '1.8'  
   class Java::JavaUtil::HashMap
     def merge(other)
       dup.merge!(other)

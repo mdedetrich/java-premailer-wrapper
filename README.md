@@ -14,6 +14,15 @@ to easily bump Premailer as a dependency
 would store this in a Singleton to reuse the `PremailerInstance`)
 - Uses a versioning scheme to identify between Premailer releases, i.e. 1.0_1.8.4 means version 1 using Premailer 1.8.4
 
+## Building
+
+Currently this isn't hosted on a maven repository, however you can easily build a jar by doing
+
+```
+mvn compile
+mvn package
+```
+
 ## Usage
 
 If you haven't already done so, you need to add the `Rubygems` maven repository, i.e.
