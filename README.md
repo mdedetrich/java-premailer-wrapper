@@ -58,6 +58,6 @@ Then to use, do something like this
         System.out.print( premailerInterface.inline_css( ) );
         
         // Shut it down
-        premailerInterface.destroyInstance();
+        premailer.destroyInstance();
         
 ```
