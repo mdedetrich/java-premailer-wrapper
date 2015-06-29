@@ -16,7 +16,7 @@ would store this in a Singleton to reuse the `PremailerInstance`)
 
 ## Usage
 
-If you haven't already done so, you need to add the `Rubygems` repository, i.e.
+If you haven't already done so, you need to add the `Rubygems` maven repository, i.e.
 
 ```xml
 		<repository>
@@ -25,6 +25,7 @@ If you haven't already done so, you need to add the `Rubygems` repository, i.e.
 		</repository>
 ```
 
+Then to use, do something like this
 
 ```java
 		String testHtml = "<html><head></head><body><p>test</p></body></html>";
@@ -48,7 +49,6 @@ If you haven't already done so, you need to add the `Rubygems` repository, i.e.
         System.out.print( premailerInterface.inline_css( ) );
         
         // Shut it down
-        
         premailerInterface.destroyInstance();
         
 ```
