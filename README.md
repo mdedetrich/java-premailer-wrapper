@@ -14,9 +14,30 @@ to easily bump Premailer as a dependency
 would store this in a Singleton to reuse the `PremailerInstance`)
 - Uses a versioning scheme to identify between Premailer releases, i.e. 1.0_1.8.4 means version 1 using Premailer 1.8.4
 
+## Dependency Info
+
+Currently hosted on maven central, with the following details
+
+```xml
+<dependency>
+	  <groupId>org.mdedetrich</groupId>
+	  <artifactId>java-premailer-wrapper</artifactId>
+	  <version>1.0_1.8.4</version>
+</dependency>
+```
+
+If you haven't already done so, you need to add the `Rubygems` maven repository, i.e.
+
+```xml
+<repository>
+    <id>rubygems-releases</id>
+    <url>http://rubygems-proxy.torquebox.org/releases</url>
+</repository>
+```
+
 ## Building
 
-Currently this isn't hosted on a maven repository, however you can easily build a jar by doing
+You can build a jar by doing
 
 ```
 mvn compile
@@ -25,39 +46,29 @@ mvn package
 
 ## Usage
 
-If you haven't already done so, you need to add the `Rubygems` maven repository, i.e.
-
-```xml
-		<repository>
-			<id>rubygems-releases</id>
-			<url>http://rubygems-proxy.torquebox.org/releases</url>
-		</repository>
-```
-
-Then to use, do something like this
+To use, do something like this
 
 ```java
-		String testHtml = "<html><head></head><body><p>test</p></body></html>";
-		
-		// Create a Premailer
-		Premailer premailer = new Premailer()
-		
-        // Get the instance
-        PremailerInterface premailerInterface = Premailer.getInstance();
-        
-        // Pass your options in form of HashMap
-        Map<String, Object> options = new HashMap<String, Object>( );
-        
-        // Pass at least this option for html string
-        options.put( "with_html_string", true );
-        
-        // Initialize premailer with html and options
-        premailerInterface.init( testHtml, options );
-        
-        System.out.print( premailerInterface.plain_text( ) );
-        System.out.print( premailerInterface.inline_css( ) );
-        
-        // Shut it down
-        premailer.destroyInstance();
-        
+String testHtml = "<html><head></head><body><p>test</p></body></html>";
+
+// Create a Premailer
+Premailer premailer = new Premailer()
+
+// Get the instance
+PremailerInterface premailerInterface = Premailer.getInstance();
+    
+// Pass your options in form of HashMap
+Map<String, Object> options = new HashMap<String, Object>( );
+    
+// Pass at least this option for html string
+options.put( "with_html_string", true );
+    
+// Initialize premailer with html and options
+premailerInterface.init( testHtml, options );
+    
+System.out.print( premailerInterface.plain_text( ) );
+System.out.print( premailerInterface.inline_css( ) );
+    
+// Shut it down
+premailer.destroyInstance();     
 ```

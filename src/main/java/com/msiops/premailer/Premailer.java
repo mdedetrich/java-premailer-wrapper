@@ -19,7 +19,6 @@ public final class Premailer {
     /**
      * Creates a new Premailer. Note that you only need to create this once, its recommended you
      * store this in a Singleton so you reuse it for multiple calls
-     * @return
      */
     
     public Premailer(){
@@ -61,7 +60,7 @@ public final class Premailer {
 
     /**
      * Returns the JRuby Scripting Container, shouldn't really need this
-     * @return
+     * @return JRuby Scripining Container
      */
     
     public ScriptingContainer getScriptingContainer() {
@@ -70,7 +69,7 @@ public final class Premailer {
 
     /**
      * Whether or not the Premailer was created with a custom Scripting Container
-     * @return
+     * @return Premailer created with custom scripting container
      */
     
     public Boolean usesCustomScriptingContainer() {
