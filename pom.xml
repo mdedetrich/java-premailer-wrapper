@@ -4,7 +4,7 @@
 	<groupId>org.mdedetrich</groupId>
 	<artifactId>java-premailer-wrapper</artifactId>
 	<packaging>jar</packaging>
-	<version>1.0_1.8.4</version>
+	<version>1.1_1.8.4</version>
 	<name>java-premailer-wrapper</name>
     <description>java-premailer-wrapper</description>
 	<url>https://github.com/mdedetrich/java-premailer-wrapper</url>
@@ -28,8 +28,17 @@
 	</developers>
 	<repositories>
 		<repository>
-			<id>rubygems-releases</id>
-			<url>http://rubygems-proxy.torquebox.org/releases</url>
+            <id>rubygems-proxy</id>
+            <name>Rubygems Proxy</name>
+            <url>http://rubygems-proxy.torquebox.org/releases</url>
+            <layout>default</layout>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+                <updatePolicy>never</updatePolicy>
+            </snapshots>
 		</repository>
 	</repositories>
 	<build>
@@ -86,7 +95,7 @@
 		<dependency>
 			<groupId>org.jruby</groupId>
 			<artifactId>jruby</artifactId>
-			<version>1.7.20</version>
+			<version>9.0.1.0</version>
 		</dependency>
 		<dependency>
 			<groupId>rubygems</groupId>
