@@ -4,7 +4,7 @@
 	<groupId>org.mdedetrich</groupId>
 	<artifactId>java-premailer-wrapper</artifactId>
 	<packaging>jar</packaging>
-	<version>1.1_1.8.4</version>
+	<version>1.1_1.8.6</version>
 	<name>java-premailer-wrapper</name>
     <description>java-premailer-wrapper</description>
 	<url>https://github.com/mdedetrich/java-premailer-wrapper</url>
@@ -100,13 +100,13 @@
 		<dependency>
 			<groupId>rubygems</groupId>
 			<artifactId>premailer</artifactId>
-			<version>1.8.4</version>
+			<version>1.8.6</version>
 			<type>gem</type>
 		</dependency>
 		<dependency>
 			<groupId>rubygems</groupId>
 			<artifactId>nokogiri</artifactId>
-			<version>1.6.6.2</version>
+			<version>1.6.7.2</version>
 			<type>gem</type>
 		</dependency>
 		<dependency>
