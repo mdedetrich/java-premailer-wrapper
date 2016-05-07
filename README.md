@@ -12,7 +12,7 @@ to easily bump Premailer as a dependency
 - A fix for JDK 1.8 in regards to conflicts for `.merge ` method (see [here](https://github.com/jruby/jruby/issues/1249))
 - The `Premailer` class no longer acts like a pseudo singleton. Its up to the user to manage the instance (typically you
 would store this in a Singleton to reuse the `PremailerInstance`)
-- Uses a versioning scheme to identify between Premailer releases, i.e. 1.0_1.8.4 means version 1 using Premailer 1.8.4
+- Uses a versioning scheme to identify between Premailer releases, i.e. 1.0_1.8.6 means version 1 using Premailer 1.8.6
 
 ## Dependency Info
 
