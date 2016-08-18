@@ -12,7 +12,7 @@ to easily bump Premailer as a dependency
 - A fix for JDK 1.8 in regards to conflicts for `.merge ` method (see [here](https://github.com/jruby/jruby/issues/1249))
 - The `Premailer` class no longer acts like a pseudo singleton. Its up to the user to manage the instance (typically you
 would store this in a Singleton to reuse the `PremailerInstance`)
-- Uses a versioning scheme to identify between Premailer releases, i.e. 1.0_1.8.6 means version 1 using Premailer 1.8.6
+- Uses a versioning scheme to identify between Premailer releases, i.e. 1.0_1.8.7 means version 1 using Premailer 1.8.7
 
 ## Dependency Info
 
@@ -22,7 +22,7 @@ Currently hosted on maven central, with the following details
 <dependency>
 	  <groupId>org.mdedetrich</groupId>
 	  <artifactId>java-premailer-wrapper</artifactId>
-	  <version>1.1_1.8.6</version>
+	  <version>1.1_1.8.7</version>
 </dependency>
 ```
 
@@ -55,7 +55,7 @@ String testHtml = "<html><head></head><body><p>test</p></body></html>";
 Premailer premailer = new Premailer()
 
 // Get the instance
-PremailerInterface premailerInterface = Premailer.getInstance();
+PremailerInterface premailerInterface = premailer.getPremailerInstance();
     
 // Pass your options in form of HashMap
 Map<String, Object> options = new HashMap<String, Object>( );
