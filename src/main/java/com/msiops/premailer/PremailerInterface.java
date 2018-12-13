@@ -4,10 +4,8 @@ import java.util.Map;
 
 public interface PremailerInterface {
 
-    public Object init( String html, Map<String, Object> options );
+    String inline_css( String html, Map<String, Object> options );
 
-    String inline_css();
-
-    String plain_text();
+    String plain_text( String html, Map<String, Object> options );
 }
 
