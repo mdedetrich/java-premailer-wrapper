@@ -22,7 +22,7 @@ Currently hosted on maven central, with the following details
 <dependency>
 	  <groupId>org.mdedetrich</groupId>
 	  <artifactId>java-premailer-wrapper</artifactId>
-	  <version>1.1_1.8.7</version>
+	  <version>1.2_1.8.7</version>
 </dependency>
 ```
 
@@ -63,11 +63,8 @@ Map<String, Object> options = new HashMap<String, Object>( );
 // Pass at least this option for html string
 options.put( "with_html_string", true );
     
-// Initialize premailer with html and options
-premailerInterface.init( testHtml, options );
-    
-System.out.print( premailerInterface.plain_text( ) );
-System.out.print( premailerInterface.inline_css( ) );
+System.out.print( premailerInterface.plain_text(testHtml, options) );
+System.out.print( premailerInterface.inline_css(testHtml, options) );
     
 // Shut it down
 premailer.destroyInstance();     
