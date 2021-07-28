@@ -1,5 +1,7 @@
 # Java Premailer Wrapper
 
+[![Maven Central](https://img.shields.io/maven-central/v/org.mdedetrich/java-premailer-wrapper?label=java-premailer-wrapper%40maven-central)](https://maven-badges.herokuapp.com/maven-central/org.mdedetrich/java-premailer-wrapper)
+
 ## What is this?
 
 This java wrapper around [Premailer](https://github.com/premailer/premailer). It is roughly based on the
