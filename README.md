@@ -22,7 +22,7 @@ Currently hosted on maven central, with the following details
 <dependency>
 	  <groupId>org.mdedetrich</groupId>
 	  <artifactId>java-premailer-wrapper</artifactId>
-	  <version>1.2_1.8.7</version>
+	  <version>1.3_1.8.7</version>
 </dependency>
 ```
 
